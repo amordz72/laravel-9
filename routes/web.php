@@ -21,4 +21,5 @@ Route::controller(Controllers::class)->group(function () {
   //  Route::get('/posts', 'show');
     //Route::post('/orders', 'store');
 });
-Route::get('/posts', App\Http\Livewire\Post\Index::class);
+Route::get('/posts', App\Http\Livewire\Post\Index::class)->name('posts');
+
